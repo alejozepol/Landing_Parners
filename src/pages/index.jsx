@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Contenido from '../components/Contenido';
 import Modal from '../components/modal';
+import Formulario from '../components/formulario';
 import Logo from '../assets/static/logo.png';
 import logoWs from '../assets/static/logoWS.png';
 import '../assets/styles/index.scss';
@@ -9,12 +10,13 @@ const Pages = () => {
   const contenido = {
     title: ['Descubre', 'Conéctate', 'Practica'],
     frase: ['espacios, eventos y actividades', 'con personas, equipos y grupos', 'tu deporte favorito'],
-    modal: false,
+    modal: true,
   };
 
   const [text, setText] = useState({
     title: [contenido.title[0]],
     frase: [contenido.frase[0]],
+    modal: true,
 
   });
   const viewModal = () => {
@@ -23,7 +25,7 @@ const Pages = () => {
       modal: true,
     });
   };
-/* 
+
   if (text.title == contenido.title[0] && !text.modal) {
     setTimeout(() => {
       setText({
@@ -52,44 +54,14 @@ const Pages = () => {
         frase: [contenido.frase[0]],
       });
     }, 5000);
-  } */
+  }
 
-  do {
-    if (text.title == contenido.title[0] && !text.modal) {
-      setTimeout(() => {
-        setText({
-          ...text,
-          title: [contenido.title[1]],
-          frase: [contenido.frase[1]],
-        });
-      }, 5000);
-    };
-    if (text.title == contenido.title[1] && !text.modal) {
-      setTimeout(() => {
-        setText({
-          ...text,
-          title: [contenido.title[2]],
-          frase: [contenido.frase[2]],
-        });
-      }, 5000);
-    };
-
-    if (text.title == contenido.title[2] && !text.modal) {
-      setTimeout(() => {
-        setText({
-          ...text,
-          title: [contenido.title[0]],
-          frase: [contenido.frase[0]],
-        });
-      }, 5000);
-    }
-  } while (!text.modal);
   return (
     <Contenido>
       <section className='Pages'>
         {text.modal && (
           <Modal>
-            <h3>Modalidad de Pago</h3>
+            <Formulario />
           </Modal>
         )}
         <img className='Pages__img' src={Logo} alt='Logo Parners' />
