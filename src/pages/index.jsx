@@ -71,12 +71,12 @@ const Pages = () => {
             type='button'
             onClick={() => viewModal()}
           >
-            Descubre como
+            DESCUBRE CÓMO
           </button>
           <a href='https://wa.me/573013974177' target='_back'>
             <button className='btn btn-whatsapp' type='button'>
               <img src={logoWs} alt='LogoWhatsapp' />
-              Contactanos
+              CONTACTANOS
             </button>
           </a>
         </div>
