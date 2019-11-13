@@ -73,10 +73,12 @@ const Pages = () => {
           >
             Descubre como
           </button>
-          <button className='btn btn-whatsapp' type='button'>
-            <img src={logoWs} alt='LogoWhatsapp' />
-            Contactanos
-          </button>
+          <a href='https://wa.me/573013974177' target='_back'>
+            <button className='btn btn-whatsapp' type='button'>
+              <img src={logoWs} alt='LogoWhatsapp' />
+              Contactanos
+            </button>
+          </a>
         </div>
       </section>
     </Contenido>
