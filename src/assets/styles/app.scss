@@ -3,15 +3,15 @@
 
 /* variables  */
 
-$color-primario: #FD9F64;
-$color-segundario: #FF004F;
+$color-primario: #FF6C27;
+$color-segundario: #FF006C;
 $color-claro: #ffffff;
 $color-oscuro: #000000;
 $color-oscuro-opacidad: #00000065;
 $color-claro-opacidad: #ffffff7e;
 $font-primaria: 'Poppins', sans-serif;
 $font-size-primaria: 10px;
-$size-sombra: 0px 8px 22px 0px;
+$size-sombra: 0px 0px 10px 0px;
 
 .centradoFlex {
     display: flex;
@@ -22,7 +22,7 @@ $size-sombra: 0px 8px 22px 0px;
     background: $color-primario;
     background: -moz-linear-gradient(top, $color-primario 0%, $color-segundario 100%);
     background: -webkit-gradient(top, left bottom, color-stop(0%, $color-primario), color-stop(100%, $color-segundario));
-    background: -webkit-linear-gradient(top, $color-primario (0%, $color-segundario) 100%);
+    background: -webkit-linear-gradient(left, $color-primario (25%, $color-segundario) 100%);
     background: -o-linear-gradient(top, $color-primario 0%, $color-segundario 100%);
     background: -ms-linear-gradient(top, $color-primario 0%, $color-segundario 100%);
     background: linear-gradient(top, $color-primario 0%, $color-segundario 100%);

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/styles/components/Contenido.scss';
+import './Contenido.scss';
 import gym from '../../assets/static/gym.jpg';
 
 const Contenido = ({ children }) => {
