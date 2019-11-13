@@ -37,9 +37,9 @@ $size-sombra: 0px 8px 22px 0px;
 }
 
 .sombraClara{
-    -webkit-box-shadow: $size-sombra $color-claro-opacidad ;
-    -moz-box-shadow: $size-sombra $color-claro-opacidad;
-    box-shadow: $size-sombra $color-claro-opacidad;
+    -webkit-box-shadow: $size-sombra $color-claro ;
+    -moz-box-shadow: $size-sombra $color-claro;
+    box-shadow: $size-sombra $color-claro;
 }
 
 body{
