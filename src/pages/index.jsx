@@ -7,26 +7,21 @@ import logoWs from '../assets/static/logoWS.png';
 import '../assets/styles/index.scss';
 
 const Pages = () => {
+  const [modal, setModal] = useState(false);
   const contenido = {
     title: ['Descubre', 'Conéctate', 'Practica'],
     frase: ['espacios, eventos y actividades', 'con personas, equipos y grupos', 'tu deporte favorito'],
-    modal: true,
   };
 
   const [text, setText] = useState({
     title: [contenido.title[0]],
     frase: [contenido.frase[0]],
-    modal: true,
-
   });
   const viewModal = () => {
-    setText({
-      ...text,
-      modal: true,
-    });
+    modal ? setModal(false) : setModal(true);
   };
 
-  if (text.title == contenido.title[0] && !text.modal) {
+  if (text.title == contenido.title[0] && !modal) {
     setTimeout(() => {
       setText({
         ...text,
@@ -36,7 +31,7 @@ const Pages = () => {
     }, 5000);
   };
 
-  if (text.title == contenido.title[1] && !text.modal) {
+  if (text.title == contenido.title[1] && !modal) {
     setTimeout(() => {
       setText({
         ...text,
@@ -46,7 +41,7 @@ const Pages = () => {
     }, 5000);
   };
 
-  if (text.title == contenido.title[2] && !text.modal) {
+  if (text.title == contenido.title[2] && !modal) {
     setTimeout(() => {
       setText({
         ...text,
@@ -59,8 +54,8 @@ const Pages = () => {
   return (
     <Contenido>
       <section className='Pages'>
-        {text.modal && (
-          <Modal>
+        {modal && (
+          <Modal close={() => viewModal()}>
             <Formulario />
           </Modal>
         )}
@@ -74,7 +69,7 @@ const Pages = () => {
           <button
             className='btn btn-blanco-color'
             type='button'
-            onClick={() => viewModal(text.modal)}
+            onClick={() => viewModal()}
           >
             Descubre como
           </button>

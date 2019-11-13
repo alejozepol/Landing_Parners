@@ -18,5 +18,15 @@
     flex-direction: column;
     width: 60%;
     height: 80vh;
+    position: relative;
+    & i{
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      color: $color-primario;
+      &:hover{
+        color: $color-oscuro;
+      }
+    }
   }
 }
