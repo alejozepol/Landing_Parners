@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Contenido from '../components/Contenido';
 import Logo from '../assets/static/logo.png';
+import logoWs from '../assets/static/logoWS.png';
 import '../assets/styles/index.scss';
 
 const Pages = () => {
@@ -14,9 +15,6 @@ const Pages = () => {
     frase: [contenido.frase[0]],
 
   });
-  console.log(text.title == contenido.title[0])
-  console.log(contenido.title[0])
-  console.log(text.title)
   if (text.title == contenido.title[0]) {
     setTimeout(() => {
       setText({
@@ -43,13 +41,16 @@ const Pages = () => {
       <section className='Pages'>
         <img className='Pages__img' src={Logo} alt='Logo Parners' />
         <div>
-          <h2 className='Pages__title'>{text.title}</h2>
+          <h2 className='Pages__title words'>{text.title}</h2>
           <h3 className='Pages__frase'>{text.frase}</h3>
         </div>
         <h4 className='Pages__cta'>¡Entrenemos Juntos!</h4>
         <div className='Pages__btn'>
           <button className='btn btn-blanco-color' type='button'>Descubre como </button>
-          <button className='btn btn-whatsapp' type='button'>Contactanos </button>
+          <button className='btn btn-whatsapp' type='button'>
+            <img src={logoWs} alt='LogoWhatsapp' />
+            Contactanos 
+          </button>
         </div>
       </section>
     </Contenido>

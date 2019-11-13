@@ -1,4 +1,5 @@
 @import './app.scss';
+@import './animacionTexto.css';
 
 .Pages{
   height: 100vh;
@@ -45,11 +46,27 @@
     background-color: $color-primario;
 }
   &-whatsapp{
+    position: relative;
     background-color: #26D566;
     color: $color-claro;
+    
+    & img{
+      height: 2rem;
+      background: $color-oscuro;
+      border-radius: 50%;
+      -moz-box-shadow: 3px 0px $color-oscuro;
+      -webkit-box-shadow: 3px 0px $color-oscuro;
+      position: absolute;
+      left:0%;
+      @extend .sombraOscura;
+    }
   }
   &-whatsapp:hover{
     background-color: #178640;
     color: $color-claro;
+    & img{
+      left:80%;
+      transition: 450ms all;
+    }
   }
 }
