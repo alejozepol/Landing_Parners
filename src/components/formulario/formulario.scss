@@ -2,6 +2,7 @@
 
 @media (max-width: 638px){
   .formulario{
+    height: 100% !important;
     grid-template-rows: 40% 60% !important;
     &__text{
       padding: 1%;
@@ -12,8 +13,9 @@
   }
 }
 .formulario {
-  height: 100%;
+  height: 70%;
   width: 100%;
+  padding: 10%;
   background-color: $color-claro;
   color: $color-oscuro;
   border-radius: 30px;
@@ -47,4 +49,10 @@
   &:hover{
     border: 1px solid $color-primario;
   }
+}
+
+.confirmacion{
+  background-color: $color-claro;
+  border-radius: 30px;
+  height: 100%;
 }

@@ -60,8 +60,8 @@ const Pages = () => {
           </Modal>
         )}
         <img className='Pages__img' src={Logo} alt='Logo Parners' />
-        <div>
-          <h2 className='Pages__title words'>{text.title}</h2>
+        <div className='Pages__text'>
+          <h2 className='Pages__title'>{text.title}</h2>
           <h3 className='Pages__frase'>{text.frase}</h3>
         </div>
         <h4 className='Pages__cta'>¡Entrenemos Juntos!</h4>

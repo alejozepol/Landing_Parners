@@ -1,99 +1,107 @@
-@import './app.scss';
-@import './animacionTexto.css';
-@media (max-width: 638px){
-  .Pages{
-    &__title{
+@import "./app.scss";
+@import "./animacionTexto.css";
+@media (max-width: 638px) {
+  .Pages {
+    &__title {
       font-size: 6em !important;
     }
-    &__frase{
+    &__frase {
       font-size: 2em !important;
+    }
 
-    }
-    
-    &__cta{
+    &__cta {
       font-size: 2em !important;
     }
-    &__btn{
+    &__btn {
       flex-direction: column-reverse !important;
     }
   }
-  .btn{
-    &-blanco-color{
+  .btn {
+    &-blanco-color {
       font-size: x-large !important;
       width: 100% !important;
       height: 4rem !important;
       margin-top: 10% !important ;
       border-radius: 0px !important;
-  }
+    }
   }
 }
 
-.Pages{
+.Pages {
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  &__img{
+  &__text {
+    font-style: italic;
+  }
+  &__img {
     width: 20em;
     height: 6em;
   }
-  &__title{
+  &__title {
     font-size: 9em;
   }
-  &__frase{
-    font-size: 3em;
-    font-style: italic;
-  }
-  
-  &__cta{
+  &__frase {
     font-size: 3em;
   }
-  &__btn{
+
+  &__cta {
+    font-size: 3em;
+  }
+  &__btn {
     width: 100vw;
     @extend .centradoFlex;
   }
 }
-.btn{
-  width: 15rem;
+.btn {
+  width: 18rem;
   height: 3rem;
   padding: 0%;
   margin: 1%;
   text-decoration: none;
   border-radius: 30px;
   border: 0;
-  font-size: large;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 800;
   @extend .sombraClara;
   @extend .centradoFlex;
-  &-blanco-color{
-      color: $color-claro;
-      @extend .degragadoColor;
-  }
-  &-blanco-color:hover{
-    background-color: $color-primario;
-}
-  &-whatsapp{
-    position: relative;
-    background-color: #26D566;
+  &-blanco-color {
     color: $color-claro;
-    
-    & img{
+    @extend .degragadoColor;
+  }
+  &-blanco-color:hover {
+    background-color: $color-primario;
+  }
+  &-blanco-color-enviar {
+    color: $color-claro;
+    background-color: $color-primario;
+  }
+
+  &-whatsapp {
+    position: relative;
+    background-color: #26d566;
+    color: $color-claro;
+
+    & img {
       height: 3rem;
       background: $color-oscuro;
       border-radius: 50%;
       -moz-box-shadow: 3px 0px $color-oscuro;
       -webkit-box-shadow: 3px 0px $color-oscuro;
       position: absolute;
-      left:0%;
+      left: 0%;
       @extend .sombraOscura;
     }
   }
-  &-whatsapp:hover{
+  &-whatsapp:hover {
     background-color: #178640;
     color: $color-claro;
-    & img{
-      left:80%;
+    & img {
+      left: 80%;
       transition: 450ms all;
     }
   }
