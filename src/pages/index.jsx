@@ -28,7 +28,7 @@ const Pages = () => {
         title: [contenido.title[1]],
         frase: [contenido.frase[1]],
       });
-    }, 5000);
+    }, 3000);
   };
 
   if (text.title == contenido.title[1] && !modal) {
@@ -38,7 +38,7 @@ const Pages = () => {
         title: [contenido.title[2]],
         frase: [contenido.frase[2]],
       });
-    }, 5000);
+    }, 3000);
   };
 
   if (text.title == contenido.title[2] && !modal) {
@@ -48,7 +48,7 @@ const Pages = () => {
         title: [contenido.title[0]],
         frase: [contenido.frase[0]],
       });
-    }, 5000);
+    }, 3000);
   }
 
   return (

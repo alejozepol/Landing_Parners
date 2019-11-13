@@ -3,10 +3,11 @@
 @media (max-width: 638px){
   .Pages{
     &__title{
-      font-size: 7em !important;
+      font-size: 6em !important;
     }
     &__frase{
       font-size: 2em !important;
+
     }
     
     &__cta{
@@ -43,6 +44,7 @@
   }
   &__frase{
     font-size: 3em;
+    font-style: italic;
   }
   
   &__cta{
