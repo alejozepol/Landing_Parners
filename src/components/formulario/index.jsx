@@ -15,7 +15,7 @@ const Formulario = () => {
         <h2>Registrate</h2>
         <input className='formulario__fname input' placeholder='Nombre y Apellido' type='text' name='FNAME' id='mce-FNAME' />
         <input className='formulario__email input' placeholder='Correo electronico' type='email' name='EMAIL' id='mce-EMAIL' />
-        <input className='formulario__btn btn btn-blanco-color' type='submit' value='Envia' name='subscribe' id='mc-embedded-subscribe' type='submit' />
+        <input className='formulario__btn btn btn-blanco-color' type='submit' value='Enviar' name='subscribe' id='mc-embedded-subscribe' type='submit' />
       </form>
     </section>
   );
