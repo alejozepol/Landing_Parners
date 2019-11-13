@@ -1,5 +1,12 @@
 @import "../../assets/styles/app.scss";
 
+@media (max-width: 638px){
+  .Modal {
+    &__content {
+      width: 90% !important;
+    }
+  }
+}
 .Modal {
   display: flex;
   justify-content: center;

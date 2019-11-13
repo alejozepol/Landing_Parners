@@ -1,5 +1,16 @@
 @import "../../assets/styles/app.scss";
 
+@media (max-width: 638px){
+  .formulario{
+    grid-template-rows: 40% 60% !important;
+    &__text{
+      padding: 1%;
+      & h3{
+        margin-top: 4% !important;
+      }
+    }
+  }
+}
 .formulario {
   height: 100%;
   width: 100%;
@@ -13,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: medium;
   }
   &__form{
     display: flex;
