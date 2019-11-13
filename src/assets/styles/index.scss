@@ -1,5 +1,31 @@
 @import './app.scss';
 @import './animacionTexto.css';
+@media (max-width: 638px){
+  .Pages{
+    &__title{
+      font-size: 7em !important;
+    }
+    &__frase{
+      font-size: 2em !important;
+    }
+    
+    &__cta{
+      font-size: 2em !important;
+    }
+    &__btn{
+      flex-direction: column-reverse !important;
+    }
+  }
+  .btn{
+    &-blanco-color{
+      font-size: x-large !important;
+      width: 100% !important;
+      height: 4rem !important;
+      margin-top: 10% !important ;
+      border-radius: 0px !important;
+  }
+  }
+}
 
 .Pages{
   height: 100vh;

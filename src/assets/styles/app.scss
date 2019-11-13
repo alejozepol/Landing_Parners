@@ -48,6 +48,13 @@ body{
     color: $color-oscuro;
     font-family: $font-primaria;
     font-size: $font-size-primaria;
+    height: 100vh;
+    width: 100vw;
+}
+
+#app{
+    height: 100vh;
+    width: 100vw;
 }
 
 @each $header, $size in (h2: 35px, h3: 20px, h4:16px) {
