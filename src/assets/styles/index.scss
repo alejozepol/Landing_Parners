@@ -1,0 +1,19 @@
+@import './app.scss';
+
+.Pages{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  &__img{
+    width: 20em;
+    height: 10em;
+  }
+  &__title{
+    font-size: 3em;
+  }
+  &__frase{
+    font-size: 4em;
+  }
+}
