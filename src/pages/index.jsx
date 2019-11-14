@@ -76,7 +76,7 @@ const Pages = () => {
           <a href='https://wa.me/573013974177' target='_back'>
             <button className='btn btn-whatsapp' type='button'>
               <img src={logoWs} alt='LogoWhatsapp' />
-              CONTACTANOS
+              CONTÀCTANOS
             </button>
           </a>
         </div>

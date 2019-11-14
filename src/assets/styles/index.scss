@@ -2,13 +2,15 @@
 @import "./animacionTexto.css";
 @media (max-width: 638px) {
   .Pages {
+    &__text {
+      line-height: 2rem !important;
+    }
     &__title {
-      font-size: 6em !important;
+      font-size: 5em !important;
     }
     &__frase {
       font-size: 2em !important;
     }
-
     &__cta {
       font-size: 2em !important;
     }
@@ -24,6 +26,14 @@
       margin-top: 10% !important ;
       border-radius: 0px !important;
     }
+    &-whatsapp {
+      width: 14rem !important;
+      height: 2rem !important;
+      font-size: large !important; 
+      & img {
+        height: 2rem !important;
+      }
+    }
   }
 }
 
@@ -36,6 +46,7 @@
   align-items: center;
   &__text {
     font-style: italic;
+    line-height: 4rem;
   }
   &__img {
     width: 20em;
@@ -67,7 +78,6 @@
   font-size: x-large;
   font-style: italic;
   font-weight: 800;
-  @extend .sombraClara;
   @extend .centradoFlex;
   &-blanco-color {
     color: $color-claro;

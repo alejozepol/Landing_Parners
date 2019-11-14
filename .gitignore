@@ -54,6 +54,7 @@ logs
 
 node_modules
 bower_componets
+dist
 
 *.sublime*
 
@@ -144,7 +145,6 @@ typings/
 .nuxt
 
 # react / gatsby 
-public/
 
 # vuepress build output
 .vuepress/dist
@@ -345,4 +345,3 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/react,linux,macos,windows,reactnative
 
-dist
