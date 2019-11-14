@@ -5,7 +5,7 @@ const Formulario = () => {
   return (
     <section className='formulario'>
       <div className='formulario__text'>
-        <h3>Tu deporte no volverá a ser igual</h3>
+        <h3>¡Entrenemos Juntos!</h3>
         <p>
           Registrate para estar al tanto de nuestras novedades
         </p>

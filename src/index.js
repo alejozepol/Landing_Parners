@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDom from 'react-dom'
-import Pages from './pages'
+import React from 'react';
+import ReactDom from 'react-dom';
+import App from './routes/app';
 
 ReactDom.render(
-  <Pages />,
-  document.getElementById("app")
-)
+  <App />,
+  document.getElementById('app'),
+);

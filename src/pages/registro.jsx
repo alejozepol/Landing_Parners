@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Contenido from '../components/Contenido';
 import Modal from '../components/modal';
-import Formulario from '../components/formulario';
+import Confirmacion from '../components/confirmacion';
 import Logo from '../assets/static/logo.png';
 import logoWs from '../assets/static/logoWS.png';
 import '../assets/styles/index.scss';
 
-const Pages = () => {
-  const [modal, setModal] = useState(false);
+const Registro = () => {
+  const [modal, setModal] = useState(true);
   const contenido = {
     title: ['Descubre', 'Conéctate', 'Practica'],
     frase: ['espacios, eventos y actividades', 'con personas, equipos y grupos', 'tu deporte favorito'],
@@ -56,7 +56,7 @@ const Pages = () => {
       <section className='Pages'>
         {modal && (
           <Modal close={() => viewModal()}>
-            <Formulario />
+            <Confirmacion />
           </Modal>
         )}
         <img className='Pages__img' src={Logo} alt='Logo Parners' />
@@ -85,4 +85,4 @@ const Pages = () => {
   );
 };
 
-export default Pages;
+export default Registro;
