@@ -64,7 +64,7 @@ const Pages = () => {
           <h2 className='Pages__title'>{text.title}</h2>
           <h3 className='Pages__frase'>{text.frase}</h3>
         </div>
-        <h4 className='Pages__cta'>¡Hacer deporte no volverá a ser igual!</h4>
+        <h4 className='Pages__cta'>¡Encuentra a la persona ideal para practicar tu deporte favorito!</h4>
         <div className='Pages__btn'>
           <button
             className='btn btn-blanco-color'
